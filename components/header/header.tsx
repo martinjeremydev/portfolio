@@ -7,7 +7,7 @@ import { useRouter } from "next/router";
 export default function Header() {
   const { locale } = useRouter();
   return (
-    <header className="fixed w-full flex flex-row items-center justify-between">
+    <header className="bg-white	fixed w-full flex flex-row items-center justify-between z-50">
       <div className="">
         <Image
           src="/svg/logo.svg"

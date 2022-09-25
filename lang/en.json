@@ -2,6 +2,14 @@
     "page.home.header.first-item": "services",
     "page.home.header.second-item": "skills",
     "page.home.header.third-item": "portfolio",
-    "page.home.header.fourth-item": "contact"
+    "page.home.header.fourth-item": "contact",
+    "page.home.services.first-item-title": "Front-end application development",
+    "page.home.services.first-item-content": "Development of complex front-end application respecting all modern constraints (accessibility, SEO, responsive design, performance, I18N ...)",
+    "page.home.services.second-item-title": "Consulting & Audit / Technical architecture",
+    "page.home.services.second-item-content": "I can help you to find a technical stack in adequacy with your need and your team. I can also assist you in setting up the technical base of your project",
+    "page.home.services.third-item-title": "Back-end API creation",
+    "page.home.services.third-item-content": "Creation of powerful and secure APIs (REST or SOAP), authentication services, database architecture and integration with external services (mailing, hosting ...)",
+    "page.home.competences.first-item-title": "Front-end technologies",
+    "page.home.competences.second-item-title": "Back-end/Devops technologies"
 
 }

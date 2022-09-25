@@ -2,6 +2,13 @@
     "page.home.header.first-item": "services",
     "page.home.header.second-item": "compétences",
     "page.home.header.third-item": "portfolio",
-    "page.home.header.fourth-item": "contact"
-
+    "page.home.header.fourth-item": "contact",
+    "page.home.services.first-item-title": "Création d'application front-end",
+    "page.home.services.first-item-content": "Création d'application front-end complexes respectant toutes les contraintes modernes (accessibilité, référencement, responsive design, performance, multilingue ...)",
+    "page.home.services.second-item-title": "Conseil & Audit / Architecture technique",
+    "page.home.services.second-item-content": "Je peux vous aider à trouver une stack technique en adéquation avec votre besoin et votre équipe. Je peux également vous accompagner dans la mise en place du socle technique de votre projet",
+    "page.home.services.third-item-title": "Création d'API back-end",
+    "page.home.services.third-item-content": "Création d'API performantes et sécurisées (REST ou SOAP), de services d'authentification, d'architecture de base de données et intégration avec des services externes (mailing, hebergement ...)",
+    "page.home.competences.first-item-title": "Technologies front-end",
+    "page.home.competences.second-item-title": "Technologies back-end / devops"
 }

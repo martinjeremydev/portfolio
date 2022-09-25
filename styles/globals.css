@@ -26,7 +26,9 @@ a {
     background: white;
   }
 }
-
+header {
+  height: 125px;
+}
 .current-lang {
   background-color: black;
   color: white;
@@ -35,6 +37,7 @@ a {
 
 .bg-welcome {
   background: rgba(0, 0, 0, .65) url('../public/images/bg.jpg');
+  background-size: cover;
   height: 100vh;
 }
 
@@ -55,4 +58,9 @@ a {
     top: 20%;
     left: 19%;
   }
+}
+
+.rotated-text {
+  writing-mode: tb-rl;
+  transform: rotate(-180deg);
 }
