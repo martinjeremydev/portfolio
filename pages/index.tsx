@@ -3,6 +3,7 @@ import HeaderComponent from "../components/header/header";
 import WelcomeComponent from "../components/welcome/welcome";
 import ServiceComponent from "../components/services/services";
 import CompetencesComponent from "../components/competences/competences";
+import PortfolioComponent from "../components/portfolio/portfolio";
 const Home: NextPage = () => {
   return (
     <>
@@ -10,6 +11,7 @@ const Home: NextPage = () => {
       <WelcomeComponent />
       <ServiceComponent />
       <CompetencesComponent />
+      <PortfolioComponent />
     </>
   );
 };

@@ -4,7 +4,7 @@ import React from "react";
 
 export default function Service() {
   return (
-    <div className="container mx-auto lg:flex flex-row">
+    <div className="container mx-auto lg:flex flex-row mt-16">
       {/* First section */}
       <div className="w-full md:w-2/3  md:mx-auto lg:w-1/3 mt-8 px-4 flex flex-col justify-center">
         <span className="text-2xl uppercase font-bold">
@@ -14,14 +14,24 @@ export default function Service() {
           <FormattedMessage id="page.home.services.first-item-content" />
         </div>
         <div className="mt-8 flex flex-row w-full justify-center">
-          <img src="/svg/angular.svg" alt="Angular Icon" width={65}></img>
+          <img
+            src="/svg/angular.svg"
+            className="dark-image"
+            alt="Angular Icon"
+            width={65}
+          ></img>
           <img
             src="/svg/react.svg"
-            className="mx-8"
+            className="mx-8 dark-image"
             alt="React Icon"
             width={70}
           ></img>
-          <img src="/svg/nextjs.svg" alt="NextJs Icon" width={90}></img>
+          <img
+            src="/svg/nextjs.svg"
+            className="dark-image"
+            alt="NextJs Icon"
+            width={90}
+          ></img>
         </div>
       </div>
       {/* Second section */}
@@ -45,14 +55,24 @@ export default function Service() {
           <FormattedMessage id="page.home.services.third-item-content" />
         </div>
         <div className="mt-8 flex flex-row w-full justify-center">
-          <img src="/svg/nodejs.svg" alt="NodeJS Icon" width={80}></img>
+          <img
+            src="/svg/nodejs.svg"
+            alt="NodeJS Icon"
+            className="dark-image"
+            width={80}
+          ></img>
           <img
             src="/svg/nestjs.svg"
-            className="mx-8"
+            className="mx-8 dark-image"
             alt="NestJS Icon"
             width={65}
           ></img>
-          <img src="/svg/symfony.svg" alt="Symfony Icon" width={65}></img>
+          <img
+            src="/svg/symfony.svg"
+            className="dark-image"
+            alt="Symfony Icon"
+            width={65}
+          ></img>
         </div>
       </div>
     </div>

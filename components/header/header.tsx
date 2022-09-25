@@ -19,28 +19,28 @@ export default function Header() {
       <div className="flex-row hidden md:flex">
         <div className="md:mx-5 lg:mx-10">
           <Link href="/#services">
-            <span className="cursor-pointer">
+            <span className="cursor-pointer text-xl">
               <FormattedMessage id="page.home.header.first-item" />
             </span>
           </Link>
         </div>
         <div className="md:mx-5 lg:mx-10">
           <Link href="/#competences">
-            <span className="cursor-pointer">
+            <span className="cursor-pointer text-xl">
               <FormattedMessage id="page.home.header.second-item" />
             </span>
           </Link>
         </div>
         <div className="md:mx-5 lg:mx-10">
           <Link href="/#portfolio">
-            <span className="cursor-pointer">
+            <span className="cursor-pointer text-xl">
               <FormattedMessage id="page.home.header.third-item" />
             </span>
           </Link>
         </div>
         <div className="md:mx-5 lg:mx-10">
           <Link href="/#contact">
-            <span className="cursor-pointer">
+            <span className="cursor-pointer text-xl">
               <FormattedMessage id="page.home.header.fourth-item" />
             </span>
           </Link>

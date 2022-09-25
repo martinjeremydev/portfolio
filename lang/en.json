@@ -10,6 +10,10 @@
     "page.home.services.third-item-title": "Back-end API creation",
     "page.home.services.third-item-content": "Creation of powerful and secure APIs (REST or SOAP), authentication services, database architecture and integration with external services (mailing, hosting ...)",
     "page.home.competences.first-item-title": "Front-end technologies",
-    "page.home.competences.second-item-title": "Back-end/Devops technologies"
+    "page.home.competences.second-item-title": "Back-end/Devops technologies",
+    "page.home.portfolio.first-item-content": "Creation of an e-commerce site for a luxury leader",
+    "page.home.portfolio.second-item-content": "Creation of an application with high business complexity",
+    "page.home.portfolio.third-item-content": "Creation of medium-sized SaaS applications",
+    "page.home.portfolio.fourth-item-content": "Creation of SEO-friendly websites"
 
 }

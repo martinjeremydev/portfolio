@@ -10,5 +10,11 @@
     "page.home.services.third-item-title": "Création d'API back-end",
     "page.home.services.third-item-content": "Création d'API performantes et sécurisées (REST ou SOAP), de services d'authentification, d'architecture de base de données et intégration avec des services externes (mailing, hebergement ...)",
     "page.home.competences.first-item-title": "Technologies front-end",
-    "page.home.competences.second-item-title": "Technologies back-end / devops"
+    "page.home.competences.second-item-title": "Technologies back-end / devops",
+    "page.home.portfolio.first-item-content": "Création d'un site e-commerce pour un leader du luxe",
+    "page.home.portfolio.second-item-content": "Création d'une application à forte complexité métier",
+    "page.home.portfolio.third-item-content": "Création d'application SaaS de taille moyenne",
+    "page.home.portfolio.fourth-item-content": "Création de site vitrine référencé"
+
+
 }
