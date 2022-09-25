@@ -2,10 +2,12 @@ import { FormattedMessage } from "react-intl";
 import Image from "next/image";
 import Link from "next/link";
 import React from "react";
+import { useRouter } from "next/router";
 
 export default function Header() {
+  const { locale } = useRouter();
   return (
-    <header className="flex flex-row items-center justify-between">
+    <header className="fixed w-full flex flex-row items-center justify-between">
       <div className="">
         <Image
           src="/svg/logo.svg"
@@ -30,14 +32,14 @@ export default function Header() {
           </Link>
         </div>
         <div className="md:mx-5 lg:mx-10">
-          <Link href="/portfolio">
+          <Link href="/#portfolio">
             <span className="cursor-pointer">
               <FormattedMessage id="page.home.header.third-item" />
             </span>
           </Link>
         </div>
         <div className="md:mx-5 lg:mx-10">
-          <Link href="/contact">
+          <Link href="/#contact">
             <span className="cursor-pointer">
               <FormattedMessage id="page.home.header.fourth-item" />
             </span>
@@ -46,11 +48,11 @@ export default function Header() {
       </div>
       <div className="mr-20 md:mr-8 lg:mr-16">
         <Link href="/" locale="fr">
-          <a>Fr.</a>
+          <a className={locale === "fr" ? "current-lang" : ""}>Fr.</a>
         </Link>
         <span className="mx-2">/</span>
         <Link href="/" locale="en">
-          <a>En.</a>
+          <a className={locale === "en" ? "current-lang" : ""}>En.</a>
         </Link>
       </div>
     </header>

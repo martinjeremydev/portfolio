@@ -7,7 +7,6 @@ import fr from "../lang/fr.json";
 
 function MyApp({ Component, pageProps }: AppProps) {
   const { locale } = useRouter();
-  console.log(locale);
   const messages = {
     en,
     fr,
