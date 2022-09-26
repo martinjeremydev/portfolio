@@ -101,3 +101,7 @@ header {
 .z-negative {
   z-index: -1;
 }
+
+.active {
+  border-bottom: 2px solid black;
+}

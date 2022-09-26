@@ -4,7 +4,7 @@ import Link from "next/link";
 import React from "react";
 import { useRouter } from "next/router";
 
-export default function Header() {
+export default function Header(props) {
   const { locale } = useRouter();
   return (
     <header className="bg-white	fixed w-full flex flex-row items-center justify-between z-50">
@@ -17,28 +17,48 @@ export default function Header() {
         />
       </div>
       <div className="flex-row hidden md:flex">
-        <div className="md:mx-5 lg:mx-10">
+        <div
+          className={`md:mx-5 lg:mx-10 " + ${
+            props.hoveredSection === "services" ? "active" : ""
+          }
+              `}
+        >
           <Link href="/#services">
             <span className="cursor-pointer text-xl">
               <FormattedMessage id="page.home.header.first-item" />
             </span>
           </Link>
         </div>
-        <div className="md:mx-5 lg:mx-10">
+        <div
+          className={`md:mx-5 lg:mx-10 " + ${
+            props.hoveredSection === "competences" ? "active" : ""
+          }
+              `}
+        >
           <Link href="/#competences">
             <span className="cursor-pointer text-xl">
               <FormattedMessage id="page.home.header.second-item" />
             </span>
           </Link>
         </div>
-        <div className="md:mx-5 lg:mx-10">
+        <div
+          className={`md:mx-5 lg:mx-10 " + ${
+            props.hoveredSection === "portfolio" ? "active" : ""
+          }
+              `}
+        >
           <Link href="/#portfolio">
             <span className="cursor-pointer text-xl">
               <FormattedMessage id="page.home.header.third-item" />
             </span>
           </Link>
         </div>
-        <div className="md:mx-5 lg:mx-10">
+        <div
+          className={`md:mx-5 lg:mx-10 " + ${
+            props.hoveredSection === "contact" ? "active" : ""
+          }
+              `}
+        >
           <Link href="/#contact">
             <span className="cursor-pointer text-xl">
               <FormattedMessage id="page.home.header.fourth-item" />
@@ -47,11 +67,11 @@ export default function Header() {
         </div>
       </div>
       <div className="mr-20 md:mr-8 lg:mr-16">
-        <Link href="/" locale="fr">
+        <Link href="" locale="fr">
           <a className={locale === "fr" ? "current-lang" : ""}>Fr.</a>
         </Link>
         <span className="mx-2">/</span>
-        <Link href="/" locale="en">
+        <Link href="" locale="en">
           <a className={locale === "en" ? "current-lang" : ""}>En.</a>
         </Link>
       </div>
