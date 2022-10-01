@@ -11,9 +11,14 @@ function MyApp({ Component, pageProps }: AppProps) {
     en,
     fr,
   };
-
+  let currentMessages;
+  if (locale && locale === "en") {
+    currentMessages = messages["en"];
+  } else {
+    currentMessages = messages["fr"];
+  }
   return (
-    <IntlProvider locale={locale ?? "fr"} messages={messages[locale ?? "fr"]}>
+    <IntlProvider locale={locale ?? "fr"} messages={currentMessages}>
       <Component {...pageProps} />
     </IntlProvider>
   );

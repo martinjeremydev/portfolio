@@ -4,7 +4,7 @@ import Link from "next/link";
 import React from "react";
 import { useRouter } from "next/router";
 
-export default function Header(props) {
+export default function Header(props: { hoveredSection: string }) {
   const { locale } = useRouter();
   return (
     <header className="bg-white	fixed w-full flex flex-row items-center justify-between z-50">
