@@ -59,6 +59,7 @@ header {
   background-color: rgba(0, 0, 0, 0.776);
   opacity: 0;
 }
+
 @media screen and (max-width: 640px) {
   .welcome-svg {
     top: 33%;
@@ -82,6 +83,26 @@ header {
   .hoverable-informations{
     opacity: 1;
   }
+  .contact-block{
+    width: 80%;
+    margin: auto;
+    padding-top: 3rem;
+  }
+
+}
+@media screen and (min-width: 640px) and (max-width: 1024px) {
+  .contact-block {
+    position: absolute;
+    top: 50%;
+    right: 11%;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .contact-block {
+    position: absolute;
+    top: 50%;
+    right: 10%;
+  }
 }
 .hoverable-informations:hover{
   opacity: 1;
@@ -104,4 +125,15 @@ header {
 
 .active {
   border-bottom: 2px solid black;
+}
+
+.bg-contact {
+  width: 100vw;
+  height: 100%;
+  position: relative;
+}
+
+.email-text {
+  border-bottom: 1px solid black;
+  cursor: pointer;
 }

@@ -3,7 +3,7 @@ import { FormattedMessage } from "react-intl";
 
 export default function Competences() {
   return (
-    <div className="container mx-auto mt-32 lg:flex flex-row">
+    <div className="container mx-auto lg:flex flex-row">
       <div className="flex flex-col w-full lg:w-1/2 items-center">
         <div className="mb-12">
           <span className="font-bold text-2xl">

@@ -4,6 +4,7 @@ import WelcomeComponent from "../components/welcome/welcome";
 import ServiceComponent from "../components/services/services";
 import CompetencesComponent from "../components/competences/competences";
 import PortfolioComponent from "../components/portfolio/portfolio";
+import ContactComponent from "../components/contact/contact";
 import { useState } from "react";
 import { useIntl } from "react-intl";
 import Head from "next/head";
@@ -39,6 +40,7 @@ const Home: NextPage = () => {
       </section>
       <section
         id="competences"
+        className="pt-32"
         onMouseEnter={() => setHoveredSectionTest("competences")}
       >
         <CompetencesComponent />
@@ -48,6 +50,12 @@ const Home: NextPage = () => {
         onMouseEnter={() => setHoveredSectionTest("portfolio")}
       >
         <PortfolioComponent />
+      </section>
+      <section
+        id="contact"
+        onMouseEnter={() => setHoveredSectionTest("contact")}
+      >
+        <ContactComponent />
       </section>
     </>
   );
