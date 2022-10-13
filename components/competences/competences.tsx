@@ -1,5 +1,6 @@
 import React from "react";
 import { FormattedMessage } from "react-intl";
+import Image from "next/image";
 
 export default function Competences() {
   return (
@@ -16,57 +17,86 @@ export default function Competences() {
           </div>
           <div className="flex flex-col">
             <div className="flex flex-row">
-              <img
-                className="mr-2 lg:mr-4 block dark-image"
-                src="/svg/angular.svg"
-                alt="Angular logo"
-                width={75}
-              ></img>
-
-              <img
-                className="mr-2 lg:mr-4 dark-image"
-                src="/svg/react.svg"
-                alt="React logo"
-                width={75}
-              ></img>
-              <img
-                className="mr-2 lg:mr-4 dark-image"
-                src="/svg/vuejs.svg"
-                alt="Vuejs Logo"
-                width={75}
-              ></img>
-              <img
-                className="mr-2 lg:mr-4 dark-image"
-                src="/svg/nextjs.svg"
-                alt="Nextjs Logo"
-                width={80}
-              ></img>
+              <div className="mr-2 lg:mr-4 ">
+                <Image
+                  className="block dark-image"
+                  src="/svg/angular.svg"
+                  alt="Angular logo"
+                  width={75}
+                  height={75}
+                  layout="intrinsic"
+                ></Image>
+              </div>
+              <div className="mr-2 lg:mr-4 ">
+                <Image
+                  className="mr-2 lg:mr-4 dark-image"
+                  src="/svg/react.svg"
+                  alt="React logo"
+                  width={75}
+                  height={75}
+                  layout="intrinsic"
+                ></Image>
+              </div>
+              <div className="mr-2 lg:mr-4 ">
+                <Image
+                  className="mr-2 lg:mr-4 dark-image"
+                  src="/svg/vuejs.svg"
+                  alt="Vuejs Logo"
+                  width={75}
+                  height={75}
+                  layout="intrinsic"
+                ></Image>
+              </div>
+              <div className="mr-2 lg:mr-4 ">
+                <Image
+                  className="mr-2 lg:mr-4 dark-image"
+                  src="/svg/nextjs.svg"
+                  alt="Nextjs Logo"
+                  width={90}
+                  height={75}
+                  layout="intrinsic"
+                ></Image>
+              </div>
             </div>
             <div className="flex flex-row mt-4">
-              <img
-                className="mr-7 dark-image"
-                src="/svg/html5.svg"
-                alt="Html 5 logo"
-                width={70}
-              ></img>
-              <img
-                className="mr-9 dark-image"
-                src="/svg/css.svg"
-                alt="Css 3 logo"
-                width={55}
-              ></img>
-              <img
-                className="mr-7 dark-image"
-                src="/svg/js.svg"
-                alt="Javascript 5 Logo"
-                width={55}
-              ></img>
-              <img
+              <div className="mr-2 lg:mr-4 ">
+                <Image
+                  className="mr-7 dark-image"
+                  src="/svg/html5.svg"
+                  alt="Html 5 logo"
+                  width={75}
+                  height={75}
+                  layout="intrinsic"
+                ></Image>
+              </div>
+              <div className="mr-2 lg:mr-4 ">
+                <Image
+                  className="mr-9 dark-image"
+                  src="/svg/css.svg"
+                  alt="Css 3 logo"
+                  width={75}
+                  height={75}
+                  layout="intrinsic"
+                ></Image>
+              </div>
+              <div className="mr-2 lg:mr-4 ">
+                <Image
+                  className="mr-7 dark-image"
+                  src="/svg/js.svg"
+                  alt="Javascript 5 Logo"
+                  width={75}
+                  height={75}
+                  layout="intrinsic"
+                ></Image>
+              </div>
+              <Image
                 className="mr-2 md:mr-4 dark-image"
                 src="/svg/xd.svg"
                 alt="Adobe XD Logo"
-                width={60}
-              ></img>
+                width={65}
+                height={65}
+                layout="intrinsic"
+              ></Image>
             </div>
           </div>
         </div>
@@ -80,44 +110,68 @@ export default function Competences() {
         <div className="flex flex-row">
           <div className="flex flex-col">
             <div className="flex flex-row">
-              <img
-                className="mr-4 dark-image"
-                src="/svg/nodejs.svg"
-                alt="NodeJS logo"
-                width={90}
-              ></img>
-              <img
-                className="mr-4 dark-image"
-                src="/svg/nestjs.svg"
-                alt="NestJS logo"
-                width={65}
-              ></img>
-              <img
-                className="mr-4 dark-image"
-                src="/svg/symfony.svg"
-                alt="Symfony Logo"
-                width={60}
-              ></img>
-              <img
-                className="mr-4 dark-image"
-                src="/svg/git.svg"
-                alt="Git Logo"
-                width={65}
-              ></img>
+              <div className="mr-4">
+                <Image
+                  className="mr-4 dark-image"
+                  src="/svg/firebase.svg"
+                  alt="Firebase logo"
+                  width={75}
+                  height={75}
+                  layout="intrinsic"
+                ></Image>
+              </div>
+              <div className="mr-4">
+                <Image
+                  className="mr-4 dark-image"
+                  src="/svg/nestjs.svg"
+                  alt="NestJS logo"
+                  width={75}
+                  height={75}
+                  layout="intrinsic"
+                ></Image>
+              </div>
+              <div className="mr-4">
+                <Image
+                  className="mr-4 dark-image"
+                  src="/svg/symfony.svg"
+                  alt="Symfony Logo"
+                  width={75}
+                  height={75}
+                  layout="intrinsic"
+                ></Image>
+              </div>
+              <div>
+                <Image
+                  className="mr-4 dark-image"
+                  src="/svg/git.svg"
+                  alt="Git Logo"
+                  width={75}
+                  height={75}
+                  layout="intrinsic"
+                ></Image>
+              </div>
             </div>
             <div className="flex flex-row mt-4">
-              <img
-                className="mr-8 dark-image"
-                src="/svg/docker.svg"
-                alt="Docker logo"
-                width={70}
-              ></img>
-              <img
-                className="mr-4 dark-image"
-                src="/svg/firebase.svg"
-                alt="Firebase logo"
-                width={70}
-              ></img>
+              <div className="mr-4">
+                <Image
+                  className="mr-8 dark-image"
+                  src="/svg/docker.svg"
+                  alt="Docker logo"
+                  width={75}
+                  height={75}
+                  layout="intrinsic"
+                ></Image>
+              </div>
+              <div className="mr-4">
+                <Image
+                  className="mr-4 dark-image"
+                  src="/svg/nodejs.svg"
+                  alt="NodeJS logo"
+                  width={90}
+                  height={75}
+                  layout="intrinsic"
+                ></Image>
+              </div>
             </div>
           </div>
         </div>

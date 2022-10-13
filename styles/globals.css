@@ -42,9 +42,8 @@ header {
 }
 
 .welcome-svg {
-  top: 25%;
-  max-width: 75%;
-  left: 10%;
+  max-width: 75% !important;
+  padding-top: 13%;
 }
 .portfolio-container {
   width: 33%;
@@ -62,8 +61,8 @@ header {
 
 @media screen and (max-width: 640px) {
   .welcome-svg {
-    top: 33%;
-    left: 13%;
+    padding-top: 28vh;
+    margin-left: 13%;
   }
   .portfolio-container {
     width: 85%;
@@ -71,11 +70,23 @@ header {
   .hoverable-informations{
     opacity: 1;
   }
+  .bg-welcome {
+    background: rgba(0, 0, 0, .65) url('../public/images/bg.jpg');
+    background-size: cover;
+    height: 75vh;
+  }
+  .email-text {
+    border-bottom: 1px solid black;
+    cursor: pointer;
+    text-align: center;
+    width: 80%;
+    margin: auto;
+  }
 }
-@media screen and (max-width: 1024px) {
+@media screen and (min-width: 640px) and (max-width: 1024px) {
   .welcome-svg {
-    top: 20%;
-    left: 19%;
+    padding-top: 40%;
+    margin-left: 13%;
   }
   .portfolio-container {
     width: 66%;
@@ -136,4 +147,5 @@ header {
 .email-text {
   border-bottom: 1px solid black;
   cursor: pointer;
+  text-align: center;
 }

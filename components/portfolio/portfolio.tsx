@@ -12,6 +12,7 @@ export default function Portfolio() {
             layout="responsive"
             height={300}
             width={500}
+            alt="Site Hermes"
           />
           <div className="hoverable-informations flex flex-col justify-center px-8">
             <span className="font-bold text-3xl mb-4 text-center">Hermès</span>
@@ -26,6 +27,7 @@ export default function Portfolio() {
             layout="responsive"
             height={300}
             width={500}
+            alt="Site la poste"
           />
           <div className="hoverable-informations flex flex-col justify-center px-8">
             <span className="font-bold text-3xl mb-4 text-center">
@@ -44,6 +46,7 @@ export default function Portfolio() {
             layout="responsive"
             height={300}
             width={500}
+            alt="Site Hub3e"
           />
           <div className="hoverable-informations flex flex-col justify-center px-8">
             <span className="font-bold text-3xl mb-4 text-center">Hub3e</span>
@@ -58,6 +61,7 @@ export default function Portfolio() {
             layout="responsive"
             height={300}
             width={500}
+            alt="Site luluberlu"
           />
           <div className="hoverable-informations flex flex-col justify-center px-8">
             <span className="font-bold text-3xl mb-4 text-center">

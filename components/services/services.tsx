@@ -13,31 +13,49 @@ export default function Service() {
         <span className="mt-4">
           <FormattedMessage id="page.home.services.first-item-content" />
         </span>
-        <div className="mt-8 flex flex-row w-full justify-center">
-          <img
-            src="/svg/angular.svg"
-            className="dark-image"
-            alt="Angular Icon"
-            width={65}
-          ></img>
-          <img
-            src="/svg/react.svg"
-            className="mx-8 dark-image"
-            alt="React Icon"
-            width={70}
-          ></img>
-          <img
-            src="/svg/nextjs.svg"
-            className="dark-image"
-            alt="NextJs Icon"
-            width={90}
-          ></img>
+        <div className="mt-8 flex flex-row w-full justify-between px-10">
+          <div>
+            <Image
+              src="/svg/angular.svg"
+              className="dark-image"
+              alt="Angular Icon"
+              width={70}
+              height={70}
+              layout="intrinsic"
+            ></Image>
+          </div>
+          <div>
+            <Image
+              src="/svg/react.svg"
+              className="mx-8 dark-image"
+              alt="React Icon"
+              width={70}
+              height={70}
+              layout="intrinsic"
+            ></Image>
+          </div>
+          <div>
+            <Image
+              src="/svg/nextjs.svg"
+              className="dark-image"
+              alt="NextJs Icon"
+              width={90}
+              height={70}
+              layout="intrinsic"
+            ></Image>
+          </div>
         </div>
       </div>
       {/* Second section */}
       <div className="w-full md:mx-auto md:w-2/3 lg:w-1/3 mt-8 px-4">
         <div className="mb-10">
-          <img src="/images/services.jpg" alt="Coffee" height={50}></img>
+          <Image
+            src="/images/services.jpg"
+            alt="Coffee"
+            width={500}
+            height={350}
+            layout="intrinsic"
+          ></Image>
         </div>
         <h1 className="text-2xl uppercase font-bold">
           <FormattedMessage id="page.home.services.second-item-title" />
@@ -54,25 +72,37 @@ export default function Service() {
         <div className="mt-4">
           <FormattedMessage id="page.home.services.third-item-content" />
         </div>
-        <div className="mt-8 flex flex-row w-full justify-center">
-          <img
-            src="/svg/nodejs.svg"
-            alt="NodeJS Icon"
-            className="dark-image"
-            width={80}
-          ></img>
-          <img
-            src="/svg/nestjs.svg"
-            className="mx-8 dark-image"
-            alt="NestJS Icon"
-            width={65}
-          ></img>
-          <img
-            src="/svg/symfony.svg"
-            className="dark-image"
-            alt="Symfony Icon"
-            width={65}
-          ></img>
+        <div className="mt-8 flex flex-row w-full justify-between px-10">
+          <div>
+            <Image
+              src="/svg/nodejs.svg"
+              alt="NodeJS Icon"
+              className="dark-image"
+              height={70}
+              width={70}
+              layout="intrinsic"
+            ></Image>
+          </div>
+          <div>
+            <Image
+              src="/svg/nestjs.svg"
+              className="mx-8 dark-image"
+              alt="NestJS Icon"
+              width={70}
+              height={70}
+              layout="intrinsic"
+            ></Image>{" "}
+          </div>
+          <div>
+            <Image
+              src="/svg/symfony.svg"
+              className="dark-image"
+              alt="Symfony Icon"
+              width={70}
+              height={70}
+              layout="intrinsic"
+            ></Image>{" "}
+          </div>
         </div>
       </div>
     </div>
