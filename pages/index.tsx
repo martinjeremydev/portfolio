@@ -25,7 +25,10 @@ const Home: NextPage = () => {
         <meta property="og:description" content={description} />
         <meta property="og:title" content={title} />
       </Head>
-      <HeaderComponent hoveredSection={hoveredSection} />
+      <HeaderComponent
+        hoveredSection={hoveredSection}
+        setHoveredSection={setHoveredSectionTest}
+      />
       <section
         id="welcome"
         onMouseEnter={() => setHoveredSectionTest("services")}

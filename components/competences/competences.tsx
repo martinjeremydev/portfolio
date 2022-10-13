@@ -12,7 +12,7 @@ export default function Competences() {
           </span>
         </div>
         <div className="flex flex-row">
-          <div className="mr-8">
+          <div className="mr-8 hidden lg:block">
             <div className="text-6xl rotated-text">100%</div>
           </div>
           <div className="flex flex-col">
@@ -102,7 +102,7 @@ export default function Competences() {
         </div>
       </div>
       <div className="flex flex-col w-full lg:w-1/2 items-center mt-12 lg:mt-0">
-        <div className="mb-14">
+        <div className="mb-14 ml-4 lg:ml-0">
           <span className="font-bold text-2xl">
             <FormattedMessage id="page.home.competences.second-item-title" />
           </span>

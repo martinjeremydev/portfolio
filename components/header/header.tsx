@@ -4,7 +4,10 @@ import Link from "next/link";
 import React from "react";
 import { useRouter } from "next/router";
 
-export default function Header(props: { hoveredSection: string }) {
+export default function Header(props: {
+  hoveredSection: string;
+  setHoveredSection: any;
+}) {
   const { locale } = useRouter();
   return (
     <header className="bg-white	fixed w-full flex flex-row items-center justify-between z-50">
@@ -24,7 +27,10 @@ export default function Header(props: { hoveredSection: string }) {
               `}
         >
           <Link href="/#services">
-            <span className="cursor-pointer text-xl">
+            <span
+              onClick={() => props.setHoveredSection("services")}
+              className="cursor-pointer text-xl"
+            >
               <FormattedMessage id="page.home.header.first-item" />
             </span>
           </Link>
@@ -36,7 +42,10 @@ export default function Header(props: { hoveredSection: string }) {
               `}
         >
           <Link href="/#competences">
-            <span className="cursor-pointer text-xl">
+            <span
+              className="cursor-pointer text-xl"
+              onClick={() => props.setHoveredSection("competences")}
+            >
               <FormattedMessage id="page.home.header.second-item" />
             </span>
           </Link>
@@ -48,7 +57,10 @@ export default function Header(props: { hoveredSection: string }) {
               `}
         >
           <Link href="/#portfolio">
-            <span className="cursor-pointer text-xl">
+            <span
+              className="cursor-pointer text-xl"
+              onClick={() => props.setHoveredSection("portfolio")}
+            >
               <FormattedMessage id="page.home.header.third-item" />
             </span>
           </Link>
@@ -60,7 +72,10 @@ export default function Header(props: { hoveredSection: string }) {
               `}
         >
           <Link href="/#contact">
-            <span className="cursor-pointer text-xl">
+            <span
+              className="cursor-pointer text-xl"
+              onClick={() => props.setHoveredSection("contact")}
+            >
               <FormattedMessage id="page.home.header.fourth-item" />
             </span>
           </Link>
